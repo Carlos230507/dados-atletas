@@ -1,52 +1,62 @@
-class Atleta(nome, idade, peso, altura, notas){
-constructor(){
-this.nome=nome
-this.idade=idade
-this.peso=peso
-this.altura=altura
-this.notas=notas
+class Atleta(nome, idade, peso, altura, notas) {
+constructor() {
+this.nome = nome
+this.idade = idade
+this.peso = peso
+this.altura = altura
+this.notas = notas
 }
-calculaCategoria(){
-if (this.idade > 8 && this.idade < 12){
+  
+calculaCategoria() {
+if (this.idade > 8 && this.idade < 12) {
 return "Infantil"}
-if (this.idade = 12 || this.idade = 13){
+if (this.idade = 12 || this.idade = 13) {
 return "Juvenil"}
-if (this.idade = 14 || this.idade = 15){
+if (this.idade = 14 || this.idade = 15) {
 return "Intermediário"}
-if (this.idade > 15 && this.idade < 31){
+if (this.idade > 15 && this.idade < 31) {
 return "Adulto"}
 else {return "Sem categoria"}
 }
-calculaIMC(){
+  
+calculaIMC() {
 let altura = this.altura * this.altura
 return this.peso / altura}
-calculaMediaValida(){
+  
+calculaMediaValida() {
 this.notas = this.notas.sort()
 let notasValidas = this.notas.slice(1, 4)
 return notasValidas / this.notas.length}
-obtemNomeAtleta(){
+  
+obtemNomeAtleta() {
 return this.nome}
-obtemIdadeAtleta(){
+  
+obtemIdadeAtleta() {
 return this.idade}
-obtemPesoAtleta(){
+  
+obtemPesoAtleta() {
 return this.peso}
-obtemNotasAtleta(){
+  
+obtemNotasAtleta() {
 return this.notas}
-obtemCategoria(){
-if (this.idade > 8 && this.idade < 12){
+  
+obtemCategoria() {
+if (this.idade > 8 && this.idade < 12) {
 return "Infantil"}
-if (this.idade = 12 || this.idade = 13){
+if (this.idade = 12 || this.idade = 13) {
 return "Juvenil"}
-if (this.idade = 14 || this.idade = 15){
+if (this.idade = 14 || this.idade = 15) {
 return "Intermediário"}
-if (this.idade > 15 && this.idade < 31){
+if (this.idade > 15 && this.idade < 31) {
 return "Adulto"}
 else {return "Sem categoria"}
 }
-obtemIMC(){
+  
+obtemIMC() {
 let altura = this.altura * this.altura
-return this.peso / altura}
-obtemMediaValida(){
+return this.peso / altura
+  
+obtemMediaValida() {
 this.notas = this.notas.sort()
 let notasValidas = this.notas.slice(1, 4)
 return notasValidas / this.notas.length}
